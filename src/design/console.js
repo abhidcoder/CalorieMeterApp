@@ -33,14 +33,15 @@ function Des1(props)
       <h1 style={{textAlignVertical: "center",textAlign: "center",color: 'purple'}}>Welcome To Athletes Go </h1>
     <div>
       <br></br>
-    <Navbar bg="dark" variant="dark" expand="lg">
+    <Navbar bg="dark" variant="dark" expand="lg" className="akss">
     
   <Container>
-    <Navbar.Brand >Set A Calorie Target You Wish To Maintain Then Hit The SET Button After Setting The Calorie Limit Eg. 4000 </Navbar.Brand>
+  
+    <Navbar.Brand ><h2>Set A Calorie Target You Wish To Maintain </h2> <h5>Then Hit The SET Button After Setting The Calorie Limit Eg. 4000 </h5></Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
-    <Button variant="danger" onClick={()=> { setPrint(true); setState(data); }}>SET</Button>
+    <Button variant="danger" style={{float:"right",marginRight:20}} onClick={()=> { setPrint(true); setState(data); }}>SET</Button>
     <label>
-    <input style={{color: 'orange'}} placeholder="4000" type="text" onChange={getData} /> calor.
+    <input style={{color: 'orange',marginRight:20}} placeholder="4000" type="text" onChange={getData} /> calor.
     </label>
   </Container>
 </Navbar>
@@ -103,7 +104,8 @@ function Des1(props)
    </Card>
    <br></br>
     <Row xs={1} md={2} className="g-4">
-    <Card border="info" className="text-center" className="centered">
+  <div   className="text-center abhi" >
+  <Card border="info"  >
   <Card.Body>
     <Card.Title>Need Help!</Card.Title>
     <Card.Text>
@@ -112,6 +114,7 @@ function Des1(props)
     <Button variant="primary" href="/consult">Consult Our Deitcian </Button>
   </Card.Body>
    </Card>
+   </div>
    </Row>
    <ValProvider.Provider value={gg}>
       {props.children}
