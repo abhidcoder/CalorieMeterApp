@@ -1,4 +1,6 @@
+-->Dependencies
 
+npm i react-router-dom react-icons react-bootstrap
 
 
 ->To start this poject 
